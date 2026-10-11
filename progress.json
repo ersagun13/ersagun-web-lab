@@ -23,7 +23,12 @@
         {
           "id": "HC02",
           "title": "Bağlantılar ve tam/göreli adresler",
-          "status": "in_progress"
+          "status": "passed",
+          "verifiedAt": "2026-10-12",
+          "evidence": {
+            "type": "student_code_and_conversation_assessment",
+            "summary": "Öğrenci uygulama.html dosyasını kendisi oluşturdu; GitHub bağlantısında tam https:// adresi ve doğru </a> kapanışı kullandı, sayfayı tarayıcıda açtı, görünen bağlantı metni ile href hedefinin farklı olduğunu ve şema yazılmadığında hedefin mevcut sayfaya göre bir yol gibi yorumlanabileceğini kendi cümleleriyle açıkladı. Dosya ilk öğrenci commit/push işlemiyle main branch'e ulaştı."
+          }
         },
         {
           "id": "HC03",
@@ -136,14 +141,26 @@
       ]
     }
   ],
-  "currentFocus": "HC02",
-  "nextAction": "Eğitim reposunu Windows'a kopyala; ilk HTML dosyanı kendin yaz. Bağlantılarda https:// ve </a> kullanımını yeniden uygula.",
+  "currentFocus": "HC03",
+  "nextAction": "Mevcut uygulama.html dosyasını tam bir HTML sayfasına dönüştür; html, head, title ve body bölümlerinin görevlerini uygulayarak öğren.",
   "setupMilestones": [
     {
       "id": "public-repository",
       "status": "verified",
       "verifiedAt": "2026-10-12",
       "evidence": "ersagun13/ersagun-web-lab public; main branch ve README API üzerinden doğrulandı."
+    },
+    {
+      "id": "windows-local-copy",
+      "status": "verified",
+      "verifiedAt": "2026-10-12",
+      "evidence": "GitHub Desktop ve Windows Explorer ekranında repo D:\\web-lab\\ersagun-web-lab konumunda doğrulandı."
+    },
+    {
+      "id": "first-student-push",
+      "status": "verified",
+      "verifiedAt": "2026-10-12",
+      "evidence": "Öğrencinin oluşturduğu lessons/01-html-basics/uygulama.html dosyası commit ve push sonrasında GitHub main branch üzerinden doğrulandı. Bu kurulum kilometre taşı Git/CI-CD kontrol noktalarını tek başına tamamlamaz."
     }
   ],
   "publicWebsiteSync": {
