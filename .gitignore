@@ -1,0 +1,21 @@
+# Gizli ayarlar ve anahtarlar
+.env
+.env.*
+!.env.example
+.dev.vars
+.dev.vars.*
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Yerel bağımlılıklar ve geçici dosyalar
+node_modules/
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.log
+
+# Özel medya eğitim reposuna girmez
+private/
+raw-media/

@@ -1,0 +1,153 @@
+{
+  "schemaVersion": 1,
+  "course": "Dört haftalık uygulamalı web geliştirme",
+  "updatedAt": "2026-10-12",
+  "timezone": "Europe/Istanbul",
+  "measurement": "Bu eğitimin kontrol noktalarının tamamlanma oranı; mesleki yeterlilik puanı değildir.",
+  "completionRule": "Uygulama ve mini sınav doğrulanmadan kontrol noktası passed yapılmaz. Öğrenci yerine hazırlanan dosyalar başarı kanıtı sayılmaz.",
+  "modules": [
+    {
+      "id": "html-css",
+      "title": "HTML / CSS",
+      "checkpoints": [
+        {
+          "id": "HC01",
+          "title": "Başlık, paragraf ve açılış/kapanış etiketleri",
+          "status": "passed",
+          "verifiedAt": "2026-10-12",
+          "evidence": {
+            "type": "conversation_assessment",
+            "summary": "Öğrenci h1 ve p ile başlık/paragraf yazdı, paragraf etiketini doğru seçti ve hatalı p kapanışını bağımsız düzeltti."
+          }
+        },
+        {
+          "id": "HC02",
+          "title": "Bağlantılar ve tam/göreli adresler",
+          "status": "in_progress"
+        },
+        {
+          "id": "HC03",
+          "title": "Tam HTML sayfası: head, body ve anlamlı yapı",
+          "status": "pending"
+        },
+        {
+          "id": "HC04",
+          "title": "CSS: seçiciler, renkler ve yazı biçimi",
+          "status": "pending"
+        },
+        {
+          "id": "HC05",
+          "title": "Kutular, yerleşim ve mobil uyumlu mini sayfa",
+          "status": "pending"
+        }
+      ]
+    },
+    {
+      "id": "javascript",
+      "title": "JavaScript",
+      "checkpoints": [
+        {
+          "id": "JS01",
+          "title": "Değişkenler, değerler ve tarayıcı konsolu",
+          "status": "pending"
+        },
+        {
+          "id": "JS02",
+          "title": "DOM: sayfadaki bir öğeyi bulmak ve değiştirmek",
+          "status": "pending"
+        },
+        {
+          "id": "JS03",
+          "title": "Tıklama olayları, koşullar ve fonksiyonlar",
+          "status": "pending"
+        },
+        {
+          "id": "JS04",
+          "title": "Diziler, döngüler ve küçük bir liste uygulaması",
+          "status": "pending"
+        },
+        {
+          "id": "JS05",
+          "title": "Klavye desteği olan etkileşimli mini proje",
+          "status": "pending"
+        }
+      ]
+    },
+    {
+      "id": "git-ci-cd",
+      "title": "Git / CI-CD",
+      "checkpoints": [
+        {
+          "id": "GC01",
+          "title": "Repo, yerel kopya ve değişiklikleri görmek",
+          "status": "pending"
+        },
+        {
+          "id": "GC02",
+          "title": "Commit, push ve pull işlemlerini açıklayıp yapmak",
+          "status": "pending"
+        },
+        {
+          "id": "GC03",
+          "title": "Geçmişi incelemek ve bir hatayı güvenle geri almak",
+          "status": "pending"
+        },
+        {
+          "id": "GC04",
+          "title": "Ayrı branch üzerinde çalışmak ve pull request açmak",
+          "status": "pending"
+        },
+        {
+          "id": "GC05",
+          "title": "Otomatik kontrol ve eğitim ortamına yayın akışı",
+          "status": "pending"
+        }
+      ]
+    },
+    {
+      "id": "cloudflare-dns-security",
+      "title": "Cloudflare / DNS / Güvenlik",
+      "checkpoints": [
+        {
+          "id": "CD01",
+          "title": "Statik site, sunucu ve Cloudflare'ın rolü",
+          "status": "pending"
+        },
+        {
+          "id": "CD02",
+          "title": "DNS: A, CNAME, MX ve TXT kayıtlarını ayırt etmek",
+          "status": "pending"
+        },
+        {
+          "id": "CD03",
+          "title": "HTTPS, sertifika ve yönlendirme mantığı",
+          "status": "pending"
+        },
+        {
+          "id": "CD04",
+          "title": "Hesap güvenliği, erişim yetkisi ve gizli anahtarlar",
+          "status": "pending"
+        },
+        {
+          "id": "CD05",
+          "title": "Ayrı eğitim ortamında yayın, kontrol ve geri dönüş",
+          "status": "pending"
+        }
+      ]
+    }
+  ],
+  "currentFocus": "HC02",
+  "nextAction": "Eğitim reposunu Windows'a kopyala; ilk HTML dosyanı kendin yaz. Bağlantılarda https:// ve </a> kullanımını yeniden uygula.",
+  "setupMilestones": [
+    {
+      "id": "public-repository",
+      "status": "verified",
+      "verifiedAt": "2026-10-12",
+      "evidence": "ersagun13/ersagun-web-lab public; main branch ve README API üzerinden doğrulandı."
+    }
+  ],
+  "publicWebsiteSync": {
+    "status": "not_published",
+    "note": "İlerleme özeti eğitim reposunda tutuluyor. Canlı siteye eğitim kodu gönderilmez; website kartının yayını bu kayıttan ayrı doğrulanmalıdır."
+  }
+}
