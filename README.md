@@ -23,6 +23,7 @@ Bu oran yalnızca bu eğitimin tamamlanmasını gösterir. Uzmanlık seviyesi de
 
 ## Başlangıç noktaları
 
+- [Şu an ne yapmalıyım? — aktif görev panosu](START_HERE.md)
 - [Dört haftalık plan](docs/PLAN.md)
 - [Kontrol noktaları ve değerlendirme kaydı](docs/PROGRESS.md)
 - [Ders 1: HTML etiketleri](lessons/01-html-basics/README.md)
@@ -38,6 +39,8 @@ Bu oran yalnızca bu eğitimin tamamlanmasını gösterir. Uzmanlık seviyesi de
 3. Küçük ödev ve mini sınavı tamamlıyorum.
 4. Kodumu GitHub'a gönderiyorum; değişikliklerim kontrol ediliyor.
 5. Eksikleri düzeltiyorum ve doğrulanan kontrol noktası kaydediliyor.
+
+Aktif çalışma görevleri `START_HERE.md` içinde tutulur. Böylece ders sırasında ChatGPT'yi sürekli açık tutmak gerekmez; görev dosyası VS Code'da uygulama dosyasıyla yan yana açılabilir.
 
 İlerleme kaydı ders sırasında güncellenir; arka planda otomatik değerlendirme yapılmaz. Asıl kayıt `progress.json` dosyasıdır. Bu README ve değerlendirme özeti onunla aynı tutulur.
 
