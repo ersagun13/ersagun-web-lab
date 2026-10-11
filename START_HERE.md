@@ -1,126 +1,165 @@
 # Şu an ne yapmalıyım?
 
-Bu dosya eğitimdeki **tek çalışma panon** olsun. ChatGPT'yi açık tutmana gerek yok.
+Bu dosya senin **tek görev panon**. ChatGPT'yi yanında açık tutmana gerek yok.
 
-## Çalışma şekli
+## Önce bunu yap — görünümü sadeleştir
 
-1. GitHub Desktop'ta **Fetch origin / Pull origin** ile güncellemeyi al.
-2. VS Code'da bu dosyayı (`START_HERE.md`) ve `lessons/01-html-basics/uygulama.html` dosyasını aç.
-3. İstersen sekmeye sağ tıklayıp **Split Right** ile görevleri solda, kodu sağda tut.
-4. Aşağıdaki görevleri sırayla yap.
-5. Tarayıcıda kendin kontrol et.
-6. Hepsi bitince **tek commit + tek push** yap.
-7. Sonra ChatGPT'ye yalnızca `pushladım` yaz. Kod GitHub reposundan kontrol edilecek.
+VS Code'da `START_HERE.md` açıkken:
 
-> Doğru yaptığın görevler tekrar yaptırılmaz. Hata varsa yalnızca hatalı kısım geri verilir.
+**Ctrl + Shift + V**
 
----
+bas.
 
-# Aktif çalışma seti — HC03: Tam HTML sayfası
+Bu, Markdown kodlarını gizleyip dosyayı **normal, okunabilir ders sayfası gibi** gösterir.
 
-## Amaç
+İstersen bu önizlemeyi solda, `uygulama.html` dosyanı sağda tut.
 
-Şu anda `uygulama.html` içinde `html`, `head`, `title` ve `body` yapısını doğru kurdun. Bu sette sayfayı gerçek bir temel HTML belgesine dönüştüreceksin.
-
-Kısa mantık:
-
-```text
-html
-├── head   → tarayıcıya/sayfaya ait bilgiler
-└── body   → ziyaretçinin ekranda gördüğü içerik
-```
+> Önemli: Ders notlarında gördüğün ` ```html ` ve ` ``` ` satırları sadece örnek kod kutusunu gösterir. Bunları `uygulama.html` içine yazma. Ekran görüntünde bu işaretlerden birkaçını HTML dosyana yazmışsın; devam etmeden önce o satırları sil.
 
 ---
 
-## Görev 1 — Modern HTML belgesini belirt
+# HC03 — Bu turda yapacağın 10 küçük görev
 
-Dosyanın en üstüne, `<html>` etiketinden önce şunu ekle:
+Hepsini `lessons/01-html-basics/uygulama.html` dosyasında yapacaksın.
+
+Her görevde sana üç şey söylüyorum:
+
+- **BUL:** mevcut kodunda neresi
+- **YAP:** ne değiştireceksin
+- **NEDEN:** ne işe yarıyor
+
+Hepsi bitince tek commit + tek push yap.
+
+---
+
+## 1) HTML belgesi olduğunu belirt
+
+**BUL:** Dosyanın en başındaki `<html>` satırını.
+
+**YAP:** `<html>` satırının hemen üstüne bunu yaz:
 
 ```html
 <!DOCTYPE html>
 ```
 
-Bu satır tarayıcıya dosyanın modern HTML olarak yorumlanacağını söyler. Açılış/kapanış çifti yoktur.
+**NEDEN:** Tarayıcıya bunun modern bir HTML belgesi olduğunu söyler.
 
 ---
 
-## Görev 2 — Sayfanın dilini belirt
+## 2) Sayfanın dilini belirt
 
-Şu satırı:
+**BUL:**
 
 ```html
 <html>
 ```
 
-şuna dönüştür:
+**YAP:** Onu şuna çevir:
 
 ```html
 <html lang="tr">
 ```
 
-`lang="tr"` sayfanın ana dilinin Türkçe olduğunu belirtir.
+**NEDEN:** Sayfanın ana dilinin Türkçe olduğunu belirtir.
 
 ---
 
-## Görev 3 — Türkçe karakter desteği ekle
+## 3) Türkçe karakter bilgisini ekle
 
-`<head>` bölümünün içine şunu ekle:
+**BUL:**
+
+```html
+<head>
+```
+
+**YAP:** `<head>` satırının hemen altına bunu yaz:
 
 ```html
 <meta charset="UTF-8">
 ```
 
-Bu, `ş`, `ğ`, `ı`, `ç`, `ö`, `ü` gibi karakterlerin doğru yorumlanmasına yardımcı olur.
+Yani bu bölüm kabaca şöyle olmalı:
+
+```html
+<head>
+    <meta charset="UTF-8">
+    <title>Benim İlk Sayfam</title>
+</head>
+```
+
+**NEDEN:** `ş, ğ, ı, ç, ö, ü` gibi karakterlerin doğru okunmasına yardım eder.
 
 ---
 
-## Görev 4 — Tarayıcı sekmesinin adını değiştir
+## 4) Tarayıcı sekmesinin adını değiştir
 
-Mevcut `<title>` içeriğini kendine göre değiştir.
+**BUL:**
 
-Örnek fikir: `Duhan'ın Web Laboratuvarı`
+```html
+<title>Benim İlk Sayfam</title>
+```
 
-Aynısını yazmak zorunda değilsin. Buradaki amaç `<title>` metninin sayfanın içinde değil, **tarayıcı sekmesinde** göründüğünü görmek.
+**YAP:** Sadece iki etiket arasındaki yazıyı değiştir.
 
----
+Örneğin:
 
-## Görev 5 — Bir bölüm başlığı ekle
+```html
+<title>Duhan'ın Web Laboratuvarı</title>
+```
 
-`<body>` içinde ana başlığın (`h1`) dışında bir de `h2` kullan.
+İstersen başka bir isim yaz.
 
-Örneğin konu olarak şunlardan birini seçebilirsin:
-
-- Hakkımda
-- Öğrendiklerim
-- Web geliştirme yolculuğum
-- Projelerim
-
-`h1` ana başlıktır; `h2` onun altındaki bir bölüm başlığıdır.
+**NEDEN:** Bu yazı sayfanın içinde değil, tarayıcı sekmesinde görünür.
 
 ---
 
-## Görev 6 — En az 3 maddelik liste oluştur
+## 5) Bir alt başlık ekle
 
-Yeni etiketler:
+**BUL:** `<body>` içindeki mevcut `<h1>...</h1>` satırını.
+
+**YAP:** H1'in altına bir `h2` ekle.
+
+Örnek:
+
+```html
+<h2>Öğrendiklerim</h2>
+```
+
+**NEDEN:** `h1` ana başlık, `h2` onun altındaki bölüm başlığıdır.
+
+---
+
+## 6) Üç maddelik liste ekle
+
+**BUL:** Biraz önce eklediğin `h2` satırını.
+
+**YAP:** H2'nin altına şu yapıda bir liste ekle:
 
 ```html
 <ul>
-    <li>Bir madde</li>
+    <li>HTML</li>
+    <li>GitHub</li>
+    <li>VS Code</li>
 </ul>
 ```
 
-- `ul` = madde işaretli listenin tamamı
-- `li` = listedeki tek bir madde
+İstersen maddeleri kendine göre değiştir.
 
-Kendine ait en az **3 maddelik** bir liste yap. Örneğin şu anda öğrendiğin şeyleri yazabilirsin.
+**NEDEN:** `ul` listenin tamamı, her `li` ise tek bir listedir.
 
 ---
 
-## Görev 7 — LinkedIn bağlantısı ekle
+## 7) LinkedIn bağlantısını ekle
 
-GitHub bağlantının yanına/altına ikinci bir bağlantı ekle.
+**BUL:** Mevcut GitHub bağlantını:
 
-Hedef adres:
+```html
+<a href="https://github.com/ersagun13">GitHub Profili</a>
+```
+
+**YAP:** Hemen altına ikinci bir bağlantı ekle.
+
+Hedef adresin:
 
 ```text
 https://www.linkedin.com/in/duhan-ersagun-findikci
@@ -128,17 +167,29 @@ https://www.linkedin.com/in/duhan-ersagun-findikci
 
 Görünen yazıyı sen seç.
 
-Kendin kontrol et:
+Kontrol et:
 
 - `href="..."` var mı?
-- Adres `https://` ile başlıyor mu?
-- Bağlantı `</a>` ile kapanıyor mu?
+- adres `https://` ile başlıyor mu?
+- sonda `</a>` var mı?
 
 ---
 
-## Görev 8 — Sayfayı anlamlı bölümlere ayır
+## 8) Sayfayı üç bölüme ayır
 
-Üç yeni etiket kullan:
+Şimdi sadece `<body>` içindeki içerikleri düzenleyeceksin.
+
+Hedef şu:
+
+```text
+<body>
+    header  → h1
+    main    → paragraf + h2 + liste + bağlantılar
+    footer  → kısa kapanış cümlesi
+</body>
+```
+
+Kullanacağın etiketler:
 
 ```html
 <header>
@@ -151,24 +202,24 @@ Kendin kontrol et:
 </footer>
 ```
 
-Bunlar kendi başlarına görünümü değiştirmez; içeriğin ne işe yaradığını anlatır.
+### Tam olarak neyi nereye taşıyacaksın?
 
-Yerleşim hedefin:
+- Mevcut `h1` → `<header>` içine
+- Mevcut `p` → `<main>` içine
+- Yeni `h2` → `<main>` içine
+- Yeni `ul` listesi → `<main>` içine
+- GitHub ve LinkedIn bağlantıları → `<main>` içine
+- Footer içine kendi kısa cümleni yaz
 
-```text
-body
-├── header → h1
-├── main   → paragraf, h2, liste, bağlantılar
-└── footer → kısa bir kapanış cümlesi
-```
-
-Footer cümlesini kendin yaz.
+**NEDEN:** Bu etiketler sayfanın görünümünü otomatik değiştirmez. İçeriğin hangi bölümde olduğunu anlatır.
 
 ---
 
-## Görev 9 — Girintileri düzenle
+## 9) Girintileri düzelt
 
-İç içe olan satırları sağa kaydır. Örneğin:
+İçerideki satırları `Tab` ile biraz sağa kaydır.
+
+Örnek:
 
 ```html
 <body>
@@ -178,56 +229,75 @@ Footer cümlesini kendin yaz.
 </body>
 ```
 
-Girinti tarayıcı için değil, kodu okuyan insan için önemlidir.
+Kural basit:
 
-VS Code'da `Tab` ile sağa, `Shift + Tab` ile sola kaydırabilirsin.
+> Bir satır başka bir etiketin içindeyse, bir kademe sağa girsin.
+
+`Tab` → sağa
+
+`Shift + Tab` → sola
 
 ---
 
-## Görev 10 — Tarayıcıda kendi testini yap
+## 10) Tarayıcı testi
 
-Dosyayı kaydet ve tarayıcıda aç. Şunları tek tek kontrol et:
+Kaydet ve `uygulama.html` dosyasını tarayıcıda aç.
+
+Kontrol et:
 
 - Ana başlık görünüyor mu?
 - Paragraf görünüyor mu?
-- `h2` görünüyor mu?
-- En az 3 maddelik liste görünüyor mu?
-- GitHub bağlantısı doğru profile gidiyor mu?
-- LinkedIn bağlantısı doğru profile gidiyor mu?
-- Tarayıcı sekmesinde kendi verdiğin `<title>` görünüyor mu?
+- H2 görünüyor mu?
+- 3 maddelik liste görünüyor mu?
+- GitHub bağlantısı doğru yere gidiyor mu?
+- LinkedIn bağlantısı doğru yere gidiyor mu?
+- Tarayıcı sekmesinin adı değişti mi?
 
-Bir şey bozuksa önce kendin HTML'e dönüp hatayı bulmaya çalış.
-
----
-
-# Mini sınav
-
-Kod bittikten sonra cevapları bir yere yazmana gerek yok. Push'tan sonra ChatGPT sana bunları soracak:
-
-1. `<head>` ile `<body>` arasındaki temel fark nedir?
-2. `<title>` nerede görünür?
-3. `h1`, paragraf ve bağlantıları neden `<head>` içine koymuyoruz?
-4. `header`, `main` ve `footer` sayfanın görünümünü otomatik değiştirir mi? Asıl amaçları nedir?
-5. `ul` ve `li` arasındaki ilişki nedir?
+Bir şey yanlışsa önce kendi kodunda bulmaya çalış.
 
 ---
 
-## Bitirince
+# En son dosyanın genel şekli nasıl olmalı?
 
-GitHub Desktop'ta tek commit oluştur.
+Buradaki yazıları birebir kopyalama; bu sadece **harita**:
 
-Önerilen commit mesajı:
+```text
+DOCTYPE
+html
+├── head
+│   ├── meta charset
+│   └── title
+└── body
+    ├── header
+    │   └── h1
+    ├── main
+    │   ├── p
+    │   ├── h2
+    │   ├── ul
+    │   │   ├── li
+    │   │   ├── li
+    │   │   └── li
+    │   ├── GitHub linki
+    │   └── LinkedIn linki
+    └── footer
+        └── kısa cümle
+```
+
+---
+
+# Bitirince
+
+1. `Ctrl + S`
+2. Tarayıcıda kontrol et
+3. GitHub Desktop'u aç
+4. Commit mesajı:
 
 ```text
 HC03: complete HTML page structure
 ```
 
-Ardından **Push origin** yap.
+5. Commit
+6. Push origin
+7. ChatGPT'ye sadece `pushladım` yaz
 
-Sonra ChatGPT'ye yalnızca:
-
-```text
-pushladım
-```
-
-yazman yeterli.
+Ben kodu GitHub'dan kontrol edeceğim. Hata varsa yalnızca yanlış olan görevi geri vereceğim.
