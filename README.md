@@ -6,29 +6,30 @@ HTML/CSS → JavaScript → Git/CI-CD → Cloudflare/DNS/Güvenlik sırasıyla i
 
 ## Eğitim ilerlemem
 
-**1 / 20 kontrol noktası tamamlandı · %5**
+**2 / 20 kontrol noktası tamamlandı · %10**
 
 | Bölüm | Tamamlanan | Bölüm ilerlemesi |
 | --- | --- | --- |
-| HTML / CSS | 1 / 5 | %20 |
+| HTML / CSS | 2 / 5 | %40 |
 | JavaScript | 0 / 5 | %0 |
 | Git / CI-CD | 0 / 5 | %0 |
 | Cloudflare / DNS / Güvenlik | 0 / 5 | %0 |
 
 Bu oran yalnızca bu eğitimin tamamlanmasını gösterir. Uzmanlık seviyesi değildir. Uygulama ve mini sınav kontrol edilmeden ilerleme verilmez.
 
-**Şu an:** HTML bağlantıları üzerinde çalışıyorum. İlk başlık/paragraf ve etiket kapatma uygulaması doğrulandı.
+**Şu an:** HC02 tamamlandı. Başlık/paragraf kullanımına ek olarak bağlantıların görünen metni ile `href` hedefinin farklı olduğunu, tam dış bağlantılarda `https://` kullanımını ve göreli adres mantığını uyguladım.
 
-**Sıradaki pratik:** Repoyu Windows'a kopyalamak, ilk HTML dosyamı yazmak ve tarayıcıda açmak.
+**Sıradaki pratik:** Mevcut `uygulama.html` dosyasını tam bir HTML sayfasına dönüştürmek; `html`, `head`, `title` ve `body` bölümlerinin görevlerini öğrenmek.
 
 ## Başlangıç noktaları
 
 - [Dört haftalık plan](docs/PLAN.md)
 - [Kontrol noktaları ve değerlendirme kaydı](docs/PROGRESS.md)
 - [Ders 1: HTML etiketleri](lessons/01-html-basics/README.md)
+- [İlk öğrenci uygulamam](lessons/01-html-basics/uygulama.html)
 - [Makine tarafından okunabilir ilerleme kaydı](progress.json)
 
-Henüz tamamlanmış bir uygulama yayınlanmadı. İlk öğrenci uygulaması ders sırasında eklenecek. Planlama ve repo düzeni öğretmen desteğiyle hazırlandı; bunlar öğrenci uygulaması olarak sayılmıyor.
+İlk öğrenci uygulaması Windows'ta VS Code ile yazıldı, tarayıcıda kontrol edildi ve GitHub Desktop üzerinden commit/push yapıldı. Planlama ve repo düzeni öğretmen desteğiyle hazırlandı; bunlar öğrenci uygulaması olarak sayılmıyor.
 
 ## Nasıl çalışıyorum?
 
