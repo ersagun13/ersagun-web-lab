@@ -2,12 +2,12 @@
 
 Son değerlendirme: **12 Ekim 2026 · Europe/Istanbul**.
 
-**Genel: 1 / 20 → %5.** Bu eğitim tamamlama oranıdır; genel geliştirici yeterliliği ölçümü değildir.
+**Genel: 2 / 20 → %10.** Bu eğitim tamamlama oranıdır; genel geliştirici yeterliliği ölçümü değildir.
 
 | Kod | Kontrol noktası | Durum |
 | --- | --- | --- |
 | HC01 | Başlık, paragraf ve açılış/kapanış etiketleri | Tamamlandı |
-| HC02 | Bağlantılar ve tam/göreli adresler | Çalışılıyor |
+| HC02 | Bağlantılar ve tam/göreli adresler | Tamamlandı |
 | HC03 | Tam HTML sayfası: head, body ve anlamlı yapı | Başlanmadı |
 | HC04 | CSS: seçiciler, renkler ve yazı biçimi | Başlanmadı |
 | HC05 | Kutular, yerleşim ve mobil uyumlu mini sayfa | Başlanmadı |
@@ -35,18 +35,18 @@ Son değerlendirme: **12 Ekim 2026 · Europe/Istanbul**.
 
 ### HC02 — Bağlantılar
 
-Öğrenci görünen bağlantı metniyle hedef adresin farklı olduğunu anladı ve `href` hedefini değiştirdi. Tam adres için `https://` ve kapanış için `</a>` kullanımı açıklama aldı. Bu ikisini doğru kullanan yeni bağlantı uygulaması ve ilgili mini sınav henüz tamamlanmadı; nokta geçilmiş sayılmıyor.
+Öğrenci `lessons/01-html-basics/uygulama.html` dosyasını VS Code'da kendisi oluşturdu. GitHub bağlantısında tam `https://` adresi ve doğru `</a>` kapanışı kullandı; dosyayı tarayıcıda açtı ve bağlantının görüntülendiğini kontrol etti.
+
+Mini sınavda görünen bağlantı yazısının hedefi belirlemediğini, hedefin `href` içinde bulunduğunu doğru açıkladı. `https://` bulunmayan `github.com/ersagun13` biçiminin mevcut sayfaya göre bir yol gibi yorumlanabileceğini kendi cümleleriyle ifade etti. HC02 tamamlandı.
 
 ## Kurulum kaydı
 
-Public eğitim reposu, `main` branch ve ilk README doğrulandı. Bu, Git / CI-CD bölümünün tamamlandığı anlamına gelmez. Windows yerel kopyası ve öğrenci tarafından yapılan ilk commit/push henüz doğrulanmadı.
+Public eğitim reposu ve `main` branch doğrulandı. Windows yerel kopyası `D:\web-lab\ersagun-web-lab` konumunda görüldü. İlk öğrenci uygulaması GitHub Desktop ile commit edildi ve push sonrasında GitHub `main` branch üzerinde bağımsız olarak doğrulandı.
+
+Bu işlemler GitHub kullanım pratiğidir; Git / CI-CD bölümündeki kontrol noktalarını tek başına tamamlamaz.
 
 ## Sıradaki görev
 
-1. Windows'ta eğitim reposunu yerel bir klasöre kopyala.
-2. VS Code'da ilk HTML dosyanı kendin oluştur.
-3. Başlık, paragraf ve tam HTTPS adresi kullanan bağlantı ekle.
-4. Tarayıcıda aç; bağlantıyı dene.
-5. GitHub'a gönder ve kodunun ne yaptığını açıkla.
+HC03 kapsamında mevcut `uygulama.html` dosyasını tam bir HTML sayfasına dönüştürmek: `html`, `head`, `title` ve `body` bölümlerinin ne işe yaradığını öğrenmek, kodu öğrencinin kendisinin yazması ve sonucu tarayıcıda kontrol etmek.
 
 Asıl değerlendirme verisi [progress.json](../progress.json) dosyasındadır. Durum değişirken bu özet ve README de güncellenir. Geçmiş bir değerlendirme düzeltilirse nedeni ayrıca kaydedilir.
